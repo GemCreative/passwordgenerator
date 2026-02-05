@@ -1,8 +1,10 @@
 import random
 import string
 
+# ========================
 # da password generator!!!
 # ========================
+
 def generate_password(length):
     if length < 5:
         raise ValueError("Length must be at least 5 to meet all requirements.")
@@ -22,7 +24,7 @@ def generate_password(length):
     return "".join(password_chars)
 
 print("===================================")
-print("Welcome to the Password Generator!")
+print("Welcome to Gem's Password Generator!")
 print("===================================")
 
 while True:
@@ -36,3 +38,4 @@ while True:
     roe = input("Enter r to make a new password or e to exit: ").lower()
     if roe == "e":
         break
+
